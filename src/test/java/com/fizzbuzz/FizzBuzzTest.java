@@ -5,10 +5,32 @@ import static org.junit.Assert.*;
 import org.junit.Test;
 
 public class FizzBuzzTest {
-    
+    private FizzBuzz TestFizzBuzz = new FizzBuzz();
+
     @Test
     public void test_fizzbuzz_example() {
-        assertEquals(2, 2);
+        String response = TestFizzBuzz.Fizzbuzz(15);
+        assertEquals("FizzBuzz", response);
+
     }
 
+    @Test
+    public void test_fizzbuzz_example2() {
+        String response = TestFizzBuzz.Fizzbuzz(3);
+        assertEquals("Fizz", response);
+
+    }
+
+    @Test
+    public void test_fizzbuzz_example3() {
+        String response = TestFizzBuzz.Fizzbuzz(5);
+        assertEquals("Buzz", response);
+
+    }
+
+    @Test
+    public void test_fizzbuzz_example4() {
+        String response = TestFizzBuzz.Fizzbuzz(4);
+        assertEquals("4", response);
+    }
 }

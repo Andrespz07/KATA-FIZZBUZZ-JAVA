@@ -1,24 +1,25 @@
 package com.fizzbuzz;
 
-public class FizzBuzz {
+public class FizzBuzz  {
     
-    public static void main(String[] args) {
-        
-        for (int i = 1; i <= 100; i++) {
-            System.out.println(fizzBuzz(i));
-        }
-    }
-    
-    public static String fizzBuzz(int numero) {
+    public String Fizzbuzz(int numero) {
         if (numero % 3 == 0 && numero % 5 == 0) {
             return "FizzBuzz";
-        } else if (numero % 3 == 0) {
-            return "Fizz";
-        } else if (numero % 5 == 0) {
-            return "Buzz";
-        } else {
-            return String.valueOf(numero);
         }
+         else if (numero % 3 == 0) {
+            return "Fizz";
+        }
+         else if (numero % 5 == 0) {
+            return "Buzz"; 
+        }
+         else { 
+            String Temporal = String.format("%s", numero);
+            return Temporal;
+        }
+      
+      
     }
+    
 }
-
+ 
+ 

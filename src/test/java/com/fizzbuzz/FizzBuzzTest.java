@@ -33,4 +33,17 @@ public class FizzBuzzTest {
         String response = TestFizzBuzz.Fizzbuzz(4);
         assertEquals("4", response);
     }
+
+    @Test
+    public void test_fizzbuzz_exampleContain3() {
+        String response = TestFizzBuzz.Fizzbuzz(351);
+        assertEquals("Fizz", response);
+    }
+
+    @Test
+    public void test_fizzbuzz_exampleContain5() {
+        String response = TestFizzBuzz.Fizzbuzz(581);
+        assertEquals("Buzz", response);
+    }
+    
 }
